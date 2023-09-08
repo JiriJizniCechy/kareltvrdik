@@ -1,0 +1,350 @@
+.box{
+    background-color: rgb(9, 136, 248);
+    border-color: blue;
+
+}
+body{
+    background-color: #0d0d0d;
+
+}
+
+.container{
+    margin-bottom: 60px;
+}
+
+
+.hero_flex{
+    display: flex;
+    padding: 250px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    background: url("heropng.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 60px;
+}
+.hero_text1{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 27px;
+}
+.hero_text2{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+}
+
+
+
+.about_picture{
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.76px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-bottom: 40px;
+}
+h4{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.72px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.portfoliotile{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.portfoliotiletext{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+    letter-spacing: 1.2px;
+    text-decoration-line: dash-through;
+    position: absolute;
+    top: 24px;
+
+}
+.headermid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.portfolio{
+    width: 100%;color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.76px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    height: auto;
+}
+
+
+@media (max-width: 768px){
+    .hero_text1{
+        color: #FFF;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 27px;
+    }
+    .hero_text2{
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 9px;
+    }
+
+    h2{
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.76px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-bottom: 16px;
+    }
+    h4{
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        letter-spacing: 0.72px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+    
+}
+    
+
+
+
+
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #0d0d0d;;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #313131;;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: #313131;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4e4e4e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color: #0d0d0d;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#0d0d0d;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #4e4e4e;
+
+  }
+}
+
+
+
+/*
+.nav-link{
+    color: #FFF;
+   
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.76px;
+
+}
+
+.nav-link:hover{
+    color: #FFF;
+    text-decoration-line:  line-through;
+}
+
+.navbar-brand{
+    color: #FFF;
+   
+    font-family: Plus Jakarta Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.76px;
+   
+
+}
+
+.navbar-brand:hover{
+    color: #FFF;
+   
+    font-family: Plus Jakarta Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.76px;
+    text-decoration-line:  line-through;
+
+}
+*/
