@@ -4,28 +4,39 @@
 
 }
 body{
-    background-color: #0d0d0d;
+    background-color: #000000;
 
 }
 
 .container{
     margin-bottom: 60px;
 }
+.pad-t-b-80{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.pad-0{
+  padding: 0px;
+}
+.margin-t-80{
+  margin-top: 80px;
+}
 
 
 .hero_flex{
     display: flex;
-    padding: 250px 0px;
+    padding: 200px 0px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     align-self: stretch;
-    background: url("heropng.png");
+    background: url("herotest.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     margin-bottom: 60px;
 }
+
 .hero_text1{
     color: #FFF;
     text-align: center;
@@ -55,13 +66,12 @@ body{
 h2{
     color: #FFF;
     font-family: Plus Jakarta Sans;
-    font-size: 92px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2.76px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+
     margin-bottom: 40px;
 }
 h4{
@@ -72,8 +82,7 @@ h4{
     font-weight: 400;
     line-height: 150%; /* 36px */
     letter-spacing: 0.72px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+ 
 }
 
 .portfoliotile{
@@ -125,30 +134,21 @@ h4{
     align-self: stretch;
 }
 
-.margintop60{
-  margin-top: 60px;
-}
 
-.portfcol{
- padding: 24px;
-
- width: 100%;
-
- object-fit: cover; 
- display: block;
-}
-
-/* video yt */
-.video-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-iframe {
+.portf-pic{
+  padding: 12px;
+ 
   width: 100%;
-  height: 400px; /* Adjust the height as needed */
-}
+ 
+  object-fit: cover; 
+  display: block;
+ }
 
+iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
 
 /* NAVBAR STYLING STARTS */
 .navbar {
@@ -160,6 +160,7 @@ iframe {
   color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-links a {
