@@ -354,6 +354,28 @@ p.textcolor-black{
     background-color: #4e4e4e;
 
   }
+
+  .hero_text1{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 27px;
+}
+.hero_text2{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+}
+
+
 }
 
 
